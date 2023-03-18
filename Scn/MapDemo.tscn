@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Resourses/DungeonFloor.tres" type="TileSet" id=1]
 [ext_resource path="res://Resourses/DungeonWall.tres" type="TileSet" id=2]
 [ext_resource path="res://Resourses/DungeonLibrary.tres" type="TileSet" id=3]
 [ext_resource path="res://Resourses/DungeonStuffs.tres" type="TileSet" id=4]
+[ext_resource path="res://Scn/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scn/Reptile.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -51,3 +53,9 @@ format = 1
 mode = 1
 cell_size = Vector2( 256, 128 )
 format = 1
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( -72, 1237 )
+
+[node name="Reptile" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2326, 592 )
